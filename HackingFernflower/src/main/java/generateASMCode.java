@@ -10,9 +10,9 @@ import java.io.PrintWriter;
 public class generateASMCode {
     public static void main(String[] args) throws Exception{
         //需要处理的Class
-        String inputFilename = "/Users/y4tacker/Desktop/JavaStudy/learn-java-asm-main/target/classes/Test.class";
+        String inputFilename = "./target/classes/Test.class";
         // 输出文件的名字
-        String outputFilename = "1.txt";
+        String outputFilename = "output.txt";
         FileInputStream fileInputStream = new FileInputStream(new File(inputFilename));
         // SKIP_DEBUG:用于指示ClassReader在读取类文件时是否跳过调试信息。调试信息包括源代码行号、局部变量名称和范围等信息
         // SKIP_FRAMES:指示ClassReader在读取类文件时是否跳过帧信息。帧信息是用于存储方法调用和异常处理的数据结构。如果指定了SKIP_FRAMES常量，那么在读取类文件时将会跳过帧信息，从而减少读取和处理的时间和内存消耗

@@ -123,13 +123,6 @@ public class MethodParameterDump implements Opcodes {
 
 
     public static void main(String[] args) throws Exception{
-        int ch1 = 0;
-        int ch2 = 0;
-        int ch3 = 0;
-        int ch4 = 3;
-        if ((ch1 | ch2 | ch3 | ch4) < 0)
-            throw new EOFException();
-        System.out.println(((ch1 << 24) + (ch2 << 16) + (ch3 << 8) + (ch4 << 0)));
         new FileOutputStream(new File("./output/佛祖在此.class")).write(dump());
     }
 }
